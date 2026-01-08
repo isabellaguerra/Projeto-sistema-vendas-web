@@ -1,3 +1,16 @@
 # Projeto-Final_devweb_Isabella_e-Cicera
 Projeto de final de semestre onde foi desenvolvido em dupla uma página de vendas.
 <img width="400" height="300" alt="KitKat - Copia (2)" src="https://github.com/user-attachments/assets/17db9813-7238-4b32-85e6-1c847acdfad5" />
+<img width="400" height="300" alt="Lamen" src="https://github.com/user-attachments/assets/551e1af8-6877-4e34-b29b-d9f1c701b688" />
+<img width="400" height="300" alt="Mochi" src="https://github.com/user-attachments/assets/50fabb00-c40f-467d-b1e3-40023d31a92b" />
+<img width="400" height="300" alt="Oreo" src="https://github.com/user-attachments/assets/d7d8ad2c-b6d3-4daa-80c7-a43e41515aef" />
+
+<img width="400" height="300" alt="OreoBlackPink" src="https://github.com/user-attachments/assets/b095316d-d7af-4f3c-8e31-0cc961f2e441" />
+
+<img width="400" height="300" alt="Pringles" src="https://github.com/user-attachments/assets/49a1b418-4e8f-4263-862c-97afa9ff60a1" />
+<img width="1600" height="500" alt="FofoliciasBanner" src="https://github.com/user-attachments/assets/606f90dd-21cb-4e6c-bbb6-5b894aa14193" />
+
+
+
+
+
