@@ -1,0 +1,399 @@
+body {
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, sans-serif;
+}
+
+/* MENU */
+header {
+    background: #e76595;
+    padding: 15px;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    al
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+button{
+    padding: 8px 12px;
+    background: #e76595;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.login-btn {
+    padding: 6px 12px;
+    background: #393939;
+    border-radius: 5px;
+}
+
+/* HOME */
+.fofo {
+    background: url('FofoliciasBanner.png') center/cover; 
+    padding: 120px 20px;
+    text-align: center;
+    color: white;
+}
+
+/* SEÇÕES */
+section {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #fff4fa;
+    padding: 60px 20px;
+}
+
+section h2 {
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #333;
+}
+
+.produtos-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.produto {
+    background: white;
+    padding: 15px;
+    width: 230px;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+    border: none;
+}
+
+.produto img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.produto button {
+    padding: 8px 12px;
+    background: #e76595;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.avaliacoes-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.avaliacao {
+    background: white;
+    padding: 20px;
+    width: 250px;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+    font-style: italic;
+}
+
+.avaliador {
+   color: fuchsia;
+}
+
+/* CONTATO */
+
+.contato-area {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.contato-form {
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+    max-width: 400px;
+    margin: auto;
+}
+.contato-form input, .contato-form textarea {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.contato-info {
+    background: #fff4fa;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+}
+
+.mapa iframe {
+    width: 400px;
+    height: 280px;
+    border-radius: 10px;
+    border: none;
+}
+
+footer {
+    background: #e76595;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer .redes {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer .redes img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    border-radius: 6px;
+}
+
+/* LOGIN */
+.login-page {
+    background: #fff4fa;
+}
+
+.login-container {
+    width: 320px;
+    padding: 25px;
+    border: 2px solid #e76595;
+    border-radius: 12px;
+    background: white;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 10px 20px;
+    background: #e76595;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.login-header {
+    background: #e76595;
+    padding: 15px;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+.login-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(100vh - 80px);
+}
+
+/*CADASTRO*/
+.box {
+    width: 320px;
+    padding: 25px;
+    border: 2px solid #e76595;
+    border-radius: 12px;
+    background: white;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
+
+.input-box {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.trocar label {
+    color: #d14a78;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* PEDIDO */
+
+.produtos-lista{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.produto-card {
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.produto-card:hover {
+    transform: scale(1.03);
+}
+
+.produto-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.produto-card button {
+    margin-top: 10px;
+    padding: 10px;
+    width: 100%;
+    background: #e76595;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.produto-card:hover button {
+    background: #d14a78;
+}
+
+.pedido-container {
+    display: flex;
+    gap: 40px;
+    padding: 20px;
+    background: #fff4fa; 
+
+}
+.produtos-lista, .carrinho {
+    width: 50%;
+}
+
+.carrinho{
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+    height: fit-content;
+}
+
+.carrinho h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.carrinho ul {
+    list-style: none;
+    padding: 0;
+}
+.carrinho li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff4fa;
+    padding: 8px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.carrinho li img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.carrinho li button {
+    padding: 5px 10px;
+    background: #e76595;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+
+    .fofo {
+        background: url('BannerFofolicias.png') center/cover;
+    }
+
+    .pedido-container {
+        flex-direction: column;
+    }
+
+    .produtos-lista {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .carrinho {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .mapa iframe {
+        width: 100%;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+}
+
+
+
