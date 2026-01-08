@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="IconCat.png">
+</head>
+<body>
+
+    <header class="login-header">
+        <nav>
+            <h1>Selecione seus produtos!</h1>
+            <ul>
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#sobre">Sobre</a></li>
+                <li><a href="index.html#produtos">Produtos</a></li>
+                <li><a href="index.html#avaliacoes">Avaliações</a></li>
+                <li><a href="index.html#contato">Contato</a></li>
+                <li><a href="login.html" class="login-btn">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="pedido-container">
+
+        <!-- LISTA DE PRODUTOS -->
+        <div class="produtos-lista">
+
+    <div class="produto-card">
+        <img src="KitKat.png">
+        <h3>KitKat Sakura</h3>
+        <p>KitKat japonês sabor morango.</p>
+        <p class="preco">R$15</p>
+        <button onclick="adicionar('KitKat Sakura', 15, 'KitKat.png')">Adicionar</button>
+    </div>
+
+    <div class="produto-card">
+        <img src="Oreo.png">
+        <h3>Oreo Golden</h3>
+        <p>Oreo coreano edição Golden.</p>
+        <p class="preco">R$25</p>
+        <button onclick="adicionar('Oreo Golden', 25, 'Oreo.png')">Adicionar</button>
+    </div>
+
+    <div class="produto-card">
+        <img src="Mochi.png">
+        <h3>Mochi Cat</h3>
+        <p>Mochi de morango do gatinho Pusheen.</p>
+        <p class="preco">R$25</p>
+        <button onclick="adicionar('Mochi Cat', 25, 'Mochi.png')">Adicionar</button>
+    </div>
+
+    <div class="produto-card">
+        <img src="OreoBlackPink.png">
+        <h3>Oreo BlackPink</h3>
+        <p>Edição especial BlackPink.</p>
+        <p class="preco">R$30</p>
+        <button onclick="adicionar('Oreo BlackPink', 30, 'OreoBlackPink.png')">Adicionar</button>
+    </div>
+
+    <div class="produto-card">
+        <img src="Lamen.png">
+        <h3>Lamen Carbonara</h3>
+        <p>Ramen coreano carbonara picante.</p>
+        <p class="preco">R$18</p>
+        <button onclick="adicionar('Lamen Carbonara', 18, 'Lamen.png')">Adicionar</button>
+    </div>
+
+    <div class="produto-card">
+        <img src="Pringles.png">
+        <h3>Pringles Caramel Butter</h3>
+        <p>Salgadinho doce de manteiga com caramelo.</p>
+        <p class="preco">R$22</p>
+        <button onclick="adicionar('Pringles Caramel', 22, 'Pringles.png')">Adicionar</button>
+    </div>
+
+</div>
+
+        <!-- CARRINHO -->
+        <div class="carrinho">
+            <h2>Seu Pedido</h2>
+            <ul id="lista-pedido"></ul>
+
+            <h3>Total: R$ <span id="total">0</span></h3>
+
+            <button onclick="finalizar()">Finalizar Pedido</button>
+        </div>
+
+    </div>
+
+    <script>
+        let total = 0;
+
+        function adicionar(nome, preco, img) {
+            total += preco;
+            document.getElementById("total").innerText = total;
+
+            const lista = document.getElementById("lista-pedido");
+            const item = document.createElement("li");
+
+            item.innerHTML = `
+                <img src="${img}">
+                <span>${nome}</span>
+                <span>R$ ${preco}</span>
+                <button onclick="remover(this, ${preco})">Excluir</button>
+            `;
+
+            lista.appendChild(item);
+        }
+
+        function remover(botao, preco) {
+            total -= preco;
+            document.getElementById("total").innerText = total;
+
+            botao.parentElement.remove();
+        }
+
+        function finalizar() {
+            const lista = document.getElementById("lista-pedido");
+
+            if (lista.children.length === 0) {
+                alert("O carrinho está vazio!");
+                return;
+            }
+
+            alert("Pedido finalizado com sucesso!");
+        }
+    </script>
+
+</body>
+</html>
